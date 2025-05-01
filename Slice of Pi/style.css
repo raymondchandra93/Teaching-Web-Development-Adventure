@@ -1,0 +1,52 @@
+body {
+    font-family: sans-serif;
+    background-color: #333333;
+    color: #f44336;
+    width: 600px;
+    margin: auto;
+}
+
+h1,
+h2 {
+    margin: 0;
+    padding: 20px 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #fff59d;
+    background-color: #f44336;
+    border: 4px dotted black;
+    box-shadow: 5px 5px 3px black;
+}
+
+.panel {
+    border: 2px solid #f44336;
+    margin: 40px 0px;
+    box-shadow: 3px 3px 2px black;
+}
+
+.panel>h4 {
+    margin: 0;
+    padding: 10px 20px;
+    background-color: #fff59d;
+}
+
+.panel>div {
+    background-color: #222222;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#slogan {
+    color: lightblue;
+    font-style: italic;
+    text-align: center;
+}
+
+#order-button {
+    display: block;
+    margin: auto;
+}

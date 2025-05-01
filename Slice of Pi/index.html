@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pizza Order</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <h1>Slice of Pi Pizza</h1>
+    <h2 id="slogan"> Order now, we'll deliver!</h2>
+
+    <div class="panel">
+        <h4>Size</h4>
+        <div> <label>12" ($12), 15" ($15), 18" ($18)</label>
+            <br>
+            <input id="size-input" type="range" value="15" min="12" max="18" step="3"></input>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h4>Crust</h4>
+        <div> Choose your crust
+            <select id="crust-input">
+                <option value="Regular">Regular</option>
+                <option value="Thin">Thin</option>
+                <option value="Deep-dish">Deep-dish</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h4>Sauce</h4>
+        <div>
+            <input type="radio" name="sauce" value="Red" checked>Red</input>
+            <input type="radio" name="sauce" value="White">White</input>
+            <input type="radio" name="sauce" value="No">No sauce</input>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h4>Toppings</h4>
+        <div>
+            Choose up to 3 toppings (+$1.50 each) <br>
+            <input type="checkbox" name="topping" value="Pepperoni">Pepperoni</input>
+            <br><input type="checkbox" name="topping" value="Mushrooms">Mushrooms</input>
+            <br><input type="checkbox" name="topping" value="Olives">Olives</input>
+            <br><input type="checkbox" name="topping" value="Anchovies">Anchovies</input>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h4>Extras</h4>
+        <div>
+            <input id="extra-cheese-input" type="checkbox" value="Extra cheese">Extra cheese (+$1.00)</input>
+            <input id="extra-sauce-input" type="checkbox" value="Extra sauce">Extra sauce (free)</input>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h4>Delivery</h4>
+        <div> Zip code (98101 only!)
+            <input id="zip-input" type="text"></input>
+        </div>
+    </div>
+
+    <div class="panel">
+        <h4>Ready?</h4>
+        <div>
+            <button id="order-button" onclick="handleOrderClick()">Place order!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
